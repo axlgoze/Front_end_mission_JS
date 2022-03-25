@@ -6,6 +6,10 @@
 
 ### Viajero: R. F. Brayan Axel
 
+Redes sociales: 
+* GitHub: [Axl Reyes](https://github.com/axlgoze)
+* Instagram: [axlze](https://www.instagram.com/axlze/)
+
 ***
 ## Caso: Pokédex :confetti_ball:
 
@@ -34,6 +38,13 @@ Para tener una idea más clara de lo que se va a realizar se elaboro un bosquejo
 
 ![Pokédex](./assets/wireframe/pokedexxy.png/)
 
+## Gotta Catch 'Em All !
+link para probrar el [Pokédex](https://axlgoze.github.io/Front_end_mission_JS/) :heart_eyes:
+
+link de [Repositorio](https://github.com/axlgoze/Front_end_mission_CSS) :grin:
+
+---
+
 ### Lista de mejoras a futuro
 
 - colocar detalles de las esquinas (circulos negros)
@@ -42,3 +53,4 @@ Para tener una idea más clara de lo que se va a realizar se elaboro un bosquejo
 - Cambiar los colores del tipo segun el pokemon buscado
 - Agregar barra de progreso que represente las estadisticas.
 - Cada busqueda incorrecta debe limpiar todos los campos.
+- Al dar enter la busqueda debe realizarse.
