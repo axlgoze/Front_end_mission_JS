@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="main-section--up">
+            <div class="rectangle centrar"></div>
+            <div class="circulo redondo centrar bajar"></div>
+            <div class="circulo2 redondo centrar" id="down"></div>
+            <!-- <div class="rectangle centrar"></div>
+            <div class="halfcircle circle1 centrar"></div>
+            <div class="circle2 centrar"></div> -->
+        </section>
+        <section>
+            <div class="main-section--cover">
+                <div class="main-pokedex">
+                    <div class="main-pokedex--back">
+
+                    <div class="main-pokedex--left">
+                        <h1>Pokédex</h1>
+                        <div class="pokeimagen">
+                        <img src="./assets/images/Pokemon-Emblema.jpg" alt="pokemon" width="125" id="img">
+                        </div>
+                        <h2 class="pokename" id="pokename" >...</h2>
+
+                        <div class="pokedex-left--container">
+                            <!-- <div class="pokedex-left--search"></div> -->
+                            <div class="pokedex-left--types" id="poke-type"></div>
+                        </div>
+                        <div class="main-pokedex--search">
+                            <input type="text" placeholder="type a pokemon" id="input">
+                            <button id="button">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="main-pokedex--right">
+                        <div class="pokedex-right--up">
+                            <div class="pokedex-right--up__title">
+                                <ul>
+                                    <li>HP</li>
+                                    <li>ATK</li>
+                                    <li>DEF</li>
+                                    <li>SATK</li>
+                                    <li>SDEF</li>
+                                    <li>SPD</li>
+                                </ul>
+                            </div>
+                            <div class="pokedex-right--up__data">
+                                <p id="hp">1</p>
+                                <p id="atk">2</p>
+                                <p id="def">3</p>
+                                <p id="satk">4</p>
+                                <p id="sdef">5</p>
+                                <p id="spd">6</p>    
+                            </div>
+                        </div>
+
+                        <div class="pokedex-right--down">
+                            <div class="pokedex-right--down__weight">
+                                <h3>weight</h3>
+                                <p id="pokeweight">0</p>
+                            </div>
+                            <div class="pokedex-right--down__height">
+                                <h3>height</h3>
+                                <p id="pokeheight">0</p>
+                            </div>
+                            <div class="pokedex-right--down__move" id="moves">
+                                <h3>moves</h3>
+                                <div class="moves">
+                                    <ul id="move-list"  class="main-moves" >
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section--down">
+            <div class="rectangle2 centrars"></div>
+            <div class="circulo3 redondos centrars" id="up"></div>
+            <div class="circulo4 redondos centrars subir" ></div>
+        </section>
+    </main>
+    <footer>
+        <script src="./js/script.js"></script>
+    </footer>
+</body>
+</html>

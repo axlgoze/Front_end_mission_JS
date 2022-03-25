@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /* fuente base */
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    /* Colores */
+    --color-primary: #c4051e;
+    --color-primary-soft: #c3293d;
+    --color-secondary: #aee0e9;
+    --color-seconfary-soft: #cae4e9;
+    --color-dark: #282623;
+    --color-light: #f4fcff;
+    --color-official1: #0075BE;
+    --color-official2: #FFCC00;
+}
+
+.main-section--up{
+    /* background-color: var(--color-primary); */
+    position: relative;
+    width: 100%;
+    /* height: 167px; */
+    height: 100%;
+    min-width: 320px;
+/*     
+    border-bottom-color: var(--color-light);
+    border-bottom-style: solid;
+    border-bottom-width: 1px; */
+
+}
+
+.centrar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.bajar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+#down{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 49%);
+}
+
+
+
+.rectangle{
+    width: 100%;
+    height: 200px;
+    height: 150px;
+    background-color: var(--color-primary); 
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-dark);
+    border: solid var(--color-light) 9px;
+}
+
+.circulo2{
+    width: 150px;
+    height: 150px;
+    /* background-color: var(--color-secondary); */
+    background: -moz-linear-gradient(top, #0075BE 0%, #AEE0E9 100%, #0075BE 100%);
+    background: -webkit-linear-gradient(top, #0075BE 0%, #AEE0E9 100%, #0075BE 100%);
+    background: linear-gradient(to bottom, #0075BE 0%, #AEE0E9 100%, #0075BE 100%);
+}
+
+.redondo{
+    border-radius: 50%;
+}
+
+.main-section--down{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+}
+
+.main-section--cover{
+    z-index: 1;
+    position: relative;
+    top: 156px;
+    width: 100%;
+    height: 580px;
+    /* background-color: var(--color-secondary); */
+    /* background: #CAE4E9; */
+    background: -webkit-radial-gradient(center, #CAE4E9 0%, #AEE0E9 33%, #0075BE 100%);
+    background: -moz-radial-gradient(center, #CAE4E9 0%, #AEE0E9 33%, #0075BE 100%);
+    background: radial-gradient(ellipse at center, #CAE4E9 0%, #AEE0E9 33%, #0075BE 100%);
+}
+
+.main-pokedex{
+    /* border: solid orchid; */
+    padding: 60px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-pokedex--back{
+    background-color: var(--color-dark);
+    align-self: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 13px;
+    display: flex;
+    padding: 30px 20px;
+}
+
+.main-pokedex--left, .main-pokedex--right{
+    background: #1C6EA4;
+    background: -moz-radial-gradient(center, #1C6EA4 0%, #2388CB 0%, #144E75 100%);
+    background: -webkit-radial-gradient(center, #1C6EA4 0%, #2388CB 0%, #144E75 100%);
+    background: radial-gradient(ellipse at center, #1C6EA4 0%, #2388CB 0%, #144E75 100%);
+    /*background-color: var(--color-secondary);*/
+}
+
+.main-pokedex--left{
+    /* border: solid yellow .3px; */
+    width: 55%;
+}
+
+.main-pokedex--right{
+    /* border: solid seagreen; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokedex-left--container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+/* .pokedex-left--search, .pokedex-left--types  */
+.pokemon__type{
+    padding: 2.2px;
+    display: inline-block;
+    width: 98px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: rgb(60, 61, 54);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    color: var(--color-light);
+}
+
+.main-pokedex--left h1{
+    font-size: 4.5rem;
+    color: var(--color-primary-soft);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main-pokedex--left img{
+    position: relative;
+    margin: 10px;
+}
+
+.pokeimagen{
+    /* border: solid firebrick; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-pokedex--left h2{
+    font-size: 3rem;
+    color: var(--color-official2);
+    text-align: center;
+}
+
+.main-pokedex--search{
+    padding: 20px;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-pokedex--search button{
+    margin-left: 13px;
+    color:  var(--color-official1);
+    font-weight: 700;
+    width: 89px;
+    height: 29px;
+    align-items: center;
+    border-radius: 7px;
+    background-color: var(--color-official2);
+}
+
+.main-pokedex--search input{
+    height: 29px;
+    width: 230px;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+.pokedex-right--up{
+    /* border: solid fuchsia; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 50%;
+}
+
+.pokedex-right--up__title{
+    /* border:  solid royalblue; */
+    width: auto;
+    height: auto;
+}
+
+.pokedex-right--up__title li{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 3.5px;
+    list-style: none;
+    text-align: left;
+    color: var(--color-seconfary-soft);
+}
+
+.pokedex-right--up__data{
+    /* border:  solid springgreen; */
+    width: 98px;
+    height: auto;
+}
+
+.pokedex-right--up__data p{
+    font-size: 1.66rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-bottom: 3.5px;
+    list-style: none;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.pokedex-right--down{
+    /* border: solid salmon; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.pokedex-right--down__weight,
+.pokedex-right--down__height,
+.pokedex-right--down__move{
+    /* border:  solid blue .3px; */
+    width: 33.33%;
+    height: 150px;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pokedex-right--down h3{
+    color: var(--color-light);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.pokedex-right--down p{
+    font-size: 3.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: var(--color-official2);
+}
+
+
+
+.main-moves {
+    height: 122px;
+    padding-left: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-official2) var(--color-official1);
+    scrollbar-gutter: stable;
+    box-shadow: inset 0 0 1.1px rgba(36, 47, 73, 0.3);
+    border-radius: 7px;
+}
+
+.moves{
+    margin-top: 11px;
+}
+
+.moves li{
+    list-style: disc;
+    font-size: 1.3rem;
+    padding-bottom: 9px;
+    text-align: left;
+    margin-right: 5px;
+    color: var(--color-light);
+}
+
+
+/*pokedex bottom*/
+.main-section--down{
+    /* background-color: var(--color-primary); */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    margin-top: 150px;
+}
+
+.centrars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.subir{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+#up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -39%);
+}
+
+
+
+.rectangle2{
+    width: 100%;
+    height: 200px;
+    height: 150px;
+    background-color: var(--color-primary); 
+    margin-top: 11px;
+}
+
+.circulo3{
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-dark);
+    border: solid var(--color-light) 9px;
+}
+
+.circulo4{
+    
+    width: 150px;
+    height: 150px;
+    /* background-color: var(--color-secondary); */
+    background: -moz-linear-gradient(top, #0075BE 0%, #AEE0E9 0%, #0075BE 100%);
+    background: -webkit-linear-gradient(top, #0075BE 0%, #AEE0E9 0%, #0075BE 100%);
+    background: linear-gradient(to bottom, #0075BE 0%, #AEE0E9 0%, #0075BE 100%);
+}
+
+.redondos{
+    border-radius: 50%;
+}
+
+footer{
+    background-color: var(--color-primary);
+    height: 190px;
+}
